@@ -17,6 +17,7 @@
 // 	return false;	
 // 	}
 // }
+fillData();
 
 function getSummary() {
 
@@ -48,6 +49,35 @@ function getSummary() {
 		userFinalSummary = 'I am a hard worker who always gives his 100%. Honesty and dedication at work is my motto. I am a fast learner who has a knack for learning. I always try to come up with innovative and creative solutions at work. I am punctual in my work and complete all my work in estimated deadlines.';
 	}
 	return(userFinalSummary);
+}
+
+function fillData(){
+	if(document.getElementsByName('firstName')[0]) {
+		document.getElementsByName('firstName')[0].innerText=localStorage.getItem("fname");
+	}
+}
+
+
+function getWorkExperience1() {
+	let expYears= document.getElementById('exp1').innerText;
+	let compName=document.getElementById('compName').innerText;
+	let positionCompany = document.getElementById('pos1').innerText;
+	let duties = document.getElementById('duty1').innerText;
+	let achievements = document.getElementById('achiev1').innerText;
+	let finalWorkExpr='';
+	if(expYears && compName && positionCompany) {
+	finalWorkExpr = 'I have worked for '+expYears+' months in '+compName+' as '+positionCompany'. My daily duties involved '
+	+duties+'.';
+	}
+	if( achievements ) {
+	finalWorkExpr+=' Some Notable Achievements in my tenure are ' +achievements+'.'
+	}
+	return finalWorkExpr;
+
+}
+
+function getWorkExperience(){
+	if()
 }
 
 
@@ -112,7 +142,6 @@ function setHobby(event)
 
 function printCv()
 {
-	event.preventDefault();
 	localStorage.setItem("hobby1",document.getElementsByName("hobby1")[0].value);
 	localStorage.setItem("hobby2",document.getElementsByName("hobby2")[0].value);
 	var pdfContent={};	

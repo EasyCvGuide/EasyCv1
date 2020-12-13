@@ -143,6 +143,12 @@ section h1{
 		background-position:  0% 100%;
 	}
 }
+.disabled {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.5;
+}
+
 section h3{
 	font-size: 35px; font-weight: 200; letter-spacing: 3px;
 	text-shadow: 1px 1px 2px transparent;
@@ -318,6 +324,7 @@ section .BTNTWO:hover{
   border-radius: 15px;
   margin: 0 auto;
   display: block;
+  margin-top: 25px;
 }
 
 .button:hover {
