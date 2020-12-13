@@ -344,7 +344,7 @@ section .BTNTWO:hover{
 	color: #312c2c;
 	margin-right: 25%;
 	box-shadow: 0 2px 2px rgba( 119, 126, 248 ),0 10px 10px rgba( 119, 126, 248 ),0 8px 8px rgba( 119, 126, 248 ),0 10px 10px rgba( 119, 126, 248 ),0 10px 10px rgba(  119, 126, 248 );
-
+padding:20px;
 }
 .form_3 {
 	margin-left: 27.6%;
