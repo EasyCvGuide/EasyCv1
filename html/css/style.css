@@ -260,6 +260,7 @@ section .BTNTWO:hover{
 
 .wrapper .menu_6{
   margin: 90px;
+  padding:20px;
   position: fixed;
   /*background:  rgba(0, 0, 0, 0.6); */
 
@@ -490,4 +491,8 @@ textarea{
 .button:hover {
   background-color: #008CBA;
   color: white;
+}
+
+textarea[name="summary"] {
+  margin-left:20%;
 }
