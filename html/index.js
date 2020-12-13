@@ -66,7 +66,7 @@ function getWorkExperience1() {
 	let achievements = document.getElementById('achiev1').innerText;
 	let finalWorkExpr='';
 	if(expYears && compName && positionCompany) {
-	finalWorkExpr = 'I have worked for '+expYears+' months in '+compName+' as '+positionCompany'. My daily duties involved '
+	finalWorkExpr = 'I have worked for '+expYears+' months in '+compName+' as '+positionCompany+'. My daily duties involved '
 	+duties+'.';
 	}
 	if( achievements ) {
@@ -75,11 +75,6 @@ function getWorkExperience1() {
 	return finalWorkExpr;
 
 }
-
-function getWorkExperience(){
-	if()
-}
-
 
 function setPersonal()
 {
@@ -130,7 +125,7 @@ function setSkillsAndInternship()
 	localStorage.setItem("internProject2",document.getElementsByName("internProject2")[0].value);
 }
 
-function setHobby(event)
+function setHobby()
 {
 	event.preventDefault();
 	localStorage.setItem("hobby1",document.getElementsByName("hobby1")[0].value);
