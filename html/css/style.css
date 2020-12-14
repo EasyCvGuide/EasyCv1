@@ -287,11 +287,11 @@ section .BTNTWO:hover{
 }
 .wrapper .menu_6 a:hover{
 	background-color: transparent;
-	color: #6a6f83;
+	color: skyblue;
 	padding: 25px 90px;
 }
 .wrapper .menu_6 .active{
-	color: purple;
+	color: blue;
 }
 
 
