@@ -290,7 +290,9 @@ section .BTNTWO:hover{
 	color: #6a6f83;
 	padding: 25px 90px;
 }
-
+.wrapper .menu_6 .active{
+	color: purple;
+}
 
 
 .form {
