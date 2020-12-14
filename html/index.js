@@ -59,11 +59,11 @@ function fillData(){
 
 
 function getWorkExperience1() {
-	let expYears= document.getElementById('exp1').innerText;
-	let compName=document.getElementById('compName').innerText;
-	let positionCompany = document.getElementById('pos1').innerText;
-	let duties = document.getElementById('duty1').innerText;
-	let achievements = document.getElementById('achiev1').innerText;
+	let expYears= document.getElementById('exp1').value;
+	let compName=document.getElementById('compName1').value;
+	let positionCompany = document.getElementById('pos1').value;
+	let duties = document.getElementById('duty1').value;
+	let achievements = document.getElementById('achiev1').value;
 	let finalWorkExpr='';
 	if(expYears && compName && positionCompany) {
 	finalWorkExpr = 'I have worked for '+expYears+' months in '+compName+' as '+positionCompany+'. My daily duties involved '
@@ -72,8 +72,8 @@ function getWorkExperience1() {
 	if( achievements ) {
 	finalWorkExpr+=' Some Notable Achievements in my tenure are ' +achievements+'.'
 	}
-	return finalWorkExpr;
-
+	localStorage.setItem("compName",document.getElementById('compName1').value);
+	localStorage.setItem("work1",finalWorkExpr);
 }
 
 function setPersonal()
@@ -92,7 +92,7 @@ function setSummary()
 	let summaryCustom = getSummary();
 	localStorage.setItem("summary",summaryCustom);	
 
-	window.location = "FIFTH.HTML";
+	window.location = "forth.HTML";
 
 
 }
@@ -275,16 +275,21 @@ function printCv()
 			{   fillColor: '#F1C40F',
 	    table: {
 				body: [
-					['.Internship/Experience/Projects                                                                                                               /']
+					['.Work Experience/Internships                                                                                                                  /']
 					
 				]
 	}	},
 	
 	'\n',
+	{
+		text:`${localStorage.getItem("compName")}`,
+			style:'work'
+	},
 		{
+
 			ul: [
-				`${localStorage.getItem("internProject1")}`,
-				`${localStorage.getItem("internProject2")}`
+				
+				`${localStorage.getItem("work1")}`
 				
 			]
 		},
@@ -292,7 +297,7 @@ function printCv()
 		
 	    table: {
 				body: [
-					['.Hobbies and Interests                                                                                                                   /']
+					['.Hobbies and Interests    	   	                                                                                                                /']
 					
 				]
 	    	
@@ -320,6 +325,11 @@ function printCv()
 			fontSize: 30,
 			bold: true
 		},
+
+		work:{
+			bold: true
+		},
+
 		subheader: {
 			fontSize: 18,
 			italics: true,

@@ -519,13 +519,14 @@ textarea[name="summary"] {
 
 
 }
-.SAVE button{
-	padding:20px 30px;
-	background:skyblue;
-	border-radius:30px;
+.button-submit{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: -150px;
 }
-.SAVE button:hover{
-	background-color:#00BCBA;
-	color:white;
-}
-
