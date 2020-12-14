@@ -519,3 +519,13 @@ textarea[name="summary"] {
 
 
 }
+.SAVE button{
+	padding:20px 30px;
+	background:skyblue;
+	border-radius:30px;
+}
+.SAVE button:hover{
+	background-color:#00BCBA;
+	color:white;
+}
+
