@@ -515,3 +515,9 @@ textarea[name="summary"] {
   font-size: 16px;
   margin-left: -150px;
 }
+
+.disabled {
+ pointer-events: none;
+ cursor: default;
+ opacity: 0.5;
+}
